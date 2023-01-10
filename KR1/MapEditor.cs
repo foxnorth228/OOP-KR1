@@ -10,6 +10,10 @@ namespace KR1
     {
         static public bool KeyPressed(char sym, List<char> elems)
         {
+            if(elems == null)
+            {
+                return true;
+            }
             return !elems.Contains(sym);
         }
 
@@ -22,7 +26,7 @@ namespace KR1
             }
             catch
             {
-                return text;
+                return "";
             }
             string answer = (num > maxSize) ? maxSize.ToString() : num.ToString();
             return answer;
@@ -39,7 +43,11 @@ namespace KR1
             {
                 if (text == "")
                 {
-                    value = 1;
+                    value = initVal;
+                }
+                else
+                {
+                    throw new ArgumentException("Not a number");
                 }
             }
             return (value > maxSize) ? maxSize : value;

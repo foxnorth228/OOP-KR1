@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KR1", "KR1\KR1.csproj", "{57C48F20-1B97-48C7-A1CF-87E2DF931EBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KR1.Tests", "KR1.Tests\KR1.Tests.csproj", "{BE6B3011-D688-4FE8-BBEA-D66311454700}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57C48F20-1B97-48C7-A1CF-87E2DF931EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C48F20-1B97-48C7-A1CF-87E2DF931EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C48F20-1B97-48C7-A1CF-87E2DF931EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C48F20-1B97-48C7-A1CF-87E2DF931EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6B3011-D688-4FE8-BBEA-D66311454700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6B3011-D688-4FE8-BBEA-D66311454700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6B3011-D688-4FE8-BBEA-D66311454700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6B3011-D688-4FE8-BBEA-D66311454700}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEFED8AC-7857-4087-8283-44DDD078CF63}
+	EndGlobalSection
+EndGlobal

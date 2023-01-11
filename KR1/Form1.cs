@@ -10,23 +10,23 @@ namespace KR1
         public Editor()
         {
             InitializeComponent();
-            grassImage = Image.FromFile("E:\\oop-kr1-textures\\grass.png");
-            groundImage = Image.FromFile("E:\\oop-kr1-textures\\ground.png");
-            sandImage = Image.FromFile("E:\\oop-kr1-textures\\sand.png");
-            waterImage = Image.FromFile("E:\\oop-kr1-textures\\water.png");
-            bridgeImage = Image.FromFile("E:\\oop-kr1-textures\\bridge.png");
+            grassImage = Properties.Resources.grass;
+            groundImage = Properties.Resources.ground;
+            sandImage = Properties.Resources.sand;
+            waterImage = Properties.Resources.water;
+            bridgeImage = Properties.Resources.bridge;
 
-            noneImage = Image.FromFile("E:\\oop-kr1-textures\\modifyImage\\none.png");
-            mountImage = Image.FromFile("E:\\oop-kr1-textures\\modifyImage\\mount.png");
-            treeImage = Image.FromFile("E:\\oop-kr1-textures\\modifyImage\\tree.png");
-            houseImage = Image.FromFile("E:\\oop-kr1-textures\\modifyImage\\house.png");
-            animalImage = Image.FromFile("E:\\oop-kr1-textures\\modifyImage\\animal.png");
+            noneImage = Properties.Resources.noneM;
+            mountImage = Properties.Resources.mountM;
+            treeImage = Properties.Resources.treeM;
+            houseImage = Properties.Resources.houseM;
+            animalImage = Properties.Resources.animalM;
 
             Modificator modNone = new Modificator(null);
-            Modificator modTree = new Modificator(Image.FromFile("E:\\oop-kr1-textures\\tree.png"));
-            Modificator modMount = new Modificator(Image.FromFile("E:\\oop-kr1-textures\\mount.png"));
-            Modificator modHouse = new Modificator(Image.FromFile("E:\\oop-kr1-textures\\house.png"));
-            Modificator modAnimal = new Modificator(Image.FromFile("E:\\oop-kr1-textures\\animal.png"));
+            Modificator modTree = new Modificator(Properties.Resources.tree);
+            Modificator modMount = new Modificator(Properties.Resources.mount);
+            Modificator modHouse = new Modificator(Properties.Resources.house);
+            Modificator modAnimal = new Modificator(Properties.Resources.animal);
 
             CellSampleGenerator gen = new CellSampleGenerator(50, CellSampleEntered, CellSampleLeft, СellSampleClicked);
             Bitmap bit = new Bitmap(grassImage);
@@ -145,15 +145,7 @@ namespace KR1
             CellSample a = (CellSample)sender;
             if (a.isModificator)
             {
-                CellSample b = Array.Find(cellItems, el => el.Image == selectImage);
-                bool isExist = false;
-                for (int i = 0; i < b.allowedMods.Length; ++i)
-                {
-                    if (b.allowedMods[i] == a.mod)
-                    {
-                        isExist = true;
-                    }
-                }
+                bool isExist = MapEditor.IsAllowedComb(cellItems, el => el.Image == selectImage, a, true);
                 if (isExist)
                 {
                     selectModify = a.mod.image;
@@ -162,15 +154,7 @@ namespace KR1
             }
             else
             {
-                CellSample b = Array.Find(cellModItems, el => el.mod.image == selectModify);
-                bool isExist = false;
-                for (int i = 0; i < a.allowedMods.Length; ++i)
-                {
-                    if (a.allowedMods[i] == b.mod)
-                    {
-                        isExist = true;
-                    }
-                }
+                bool isExist = MapEditor.IsAllowedComb(cellModItems, el => el.mod.image == selectModify, a, false);
                 if (isExist)
                 {
                     selectImage = a.Image;

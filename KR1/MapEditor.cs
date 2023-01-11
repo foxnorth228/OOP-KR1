@@ -52,5 +52,26 @@ namespace KR1
             }
             return (value > maxSize) ? maxSize : value;
         }
+
+        static public bool IsAllowedComb(CellSample[] cellItems, Predicate<CellSample> match, CellSample cell, bool isCellMod)
+        {
+            CellSample checkCell = Array.Find(cellItems, match);
+            bool isExist = false;
+            if(isCellMod)
+            {
+                CellSample inter = checkCell;
+                checkCell = cell;
+                cell = inter;
+            }
+            for (int i = 0; i < cell.allowedMods.Length; ++i)
+            {
+                if (cell.allowedMods[i] == checkCell.mod)
+                {
+                    isExist = true;
+                    break;
+                }
+            }
+            return isExist;
+        }
     }
 }

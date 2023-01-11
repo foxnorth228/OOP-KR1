@@ -62,46 +62,52 @@ namespace KR1
             this.menu.Controls.Add(this.heightBox);
             this.menu.Controls.Add(this.widthName);
             this.menu.Controls.Add(this.widthBox);
-            this.menu.Location = new System.Drawing.Point(12, 12);
+            this.menu.Location = new System.Drawing.Point(14, 14);
+            this.menu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(305, 657);
+            this.menu.Size = new System.Drawing.Size(356, 758);
             this.menu.TabIndex = 0;
             // 
-            // activeCellImage
+            // activeCell
             // 
-            this.activeCell.Location = new System.Drawing.Point(33, 494);
-            this.activeCell.Name = "activeCellImage";
-            this.activeCell.Size = new System.Drawing.Size(75, 75);
+            this.activeCell.Location = new System.Drawing.Point(38, 570);
+            this.activeCell.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.activeCell.Name = "activeCell";
+            this.activeCell.Size = new System.Drawing.Size(88, 87);
             this.activeCell.TabIndex = 5;
             this.activeCell.TabStop = false;
             // 
             // activeModify
             // 
-            this.activeModify.Location = new System.Drawing.Point(192, 494);
+            this.activeModify.Location = new System.Drawing.Point(224, 570);
+            this.activeModify.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.activeModify.Name = "activeModify";
-            this.activeModify.Size = new System.Drawing.Size(75, 75);
+            this.activeModify.Size = new System.Drawing.Size(88, 87);
             this.activeModify.TabIndex = 2;
             this.activeModify.TabStop = false;
             // 
             // typeModifyMenu
             // 
-            this.typeModifyMenu.Location = new System.Drawing.Point(19, 319);
+            this.typeModifyMenu.Location = new System.Drawing.Point(22, 368);
+            this.typeModifyMenu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.typeModifyMenu.Name = "typeModifyMenu";
-            this.typeModifyMenu.Size = new System.Drawing.Size(250, 100);
+            this.typeModifyMenu.Size = new System.Drawing.Size(292, 115);
             this.typeModifyMenu.TabIndex = 4;
             // 
             // typeCellMenu
             // 
-            this.typeCellMenu.Location = new System.Drawing.Point(19, 151);
+            this.typeCellMenu.Location = new System.Drawing.Point(22, 174);
+            this.typeCellMenu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.typeCellMenu.Name = "typeCellMenu";
-            this.typeCellMenu.Size = new System.Drawing.Size(250, 100);
+            this.typeCellMenu.Size = new System.Drawing.Size(292, 115);
             this.typeCellMenu.TabIndex = 2;
             // 
             // clearCard
             // 
-            this.clearCard.Location = new System.Drawing.Point(192, 102);
+            this.clearCard.Location = new System.Drawing.Point(224, 118);
+            this.clearCard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.clearCard.Name = "clearCard";
-            this.clearCard.Size = new System.Drawing.Size(75, 23);
+            this.clearCard.Size = new System.Drawing.Size(88, 27);
             this.clearCard.TabIndex = 2;
             this.clearCard.Text = "Clear";
             this.clearCard.UseVisualStyleBackColor = true;
@@ -109,9 +115,10 @@ namespace KR1
             // 
             // createCard
             // 
-            this.createCard.Location = new System.Drawing.Point(33, 102);
+            this.createCard.Location = new System.Drawing.Point(38, 118);
+            this.createCard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.createCard.Name = "createCard";
-            this.createCard.Size = new System.Drawing.Size(75, 23);
+            this.createCard.Size = new System.Drawing.Size(88, 27);
             this.createCard.TabIndex = 2;
             this.createCard.Text = "Create";
             this.createCard.UseVisualStyleBackColor = true;
@@ -120,17 +127,19 @@ namespace KR1
             // heightName
             // 
             this.heightName.AutoSize = true;
-            this.heightName.Location = new System.Drawing.Point(212, 31);
+            this.heightName.Location = new System.Drawing.Point(247, 36);
+            this.heightName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.heightName.Name = "heightName";
-            this.heightName.Size = new System.Drawing.Size(38, 13);
+            this.heightName.Size = new System.Drawing.Size(43, 15);
             this.heightName.TabIndex = 3;
             this.heightName.Text = "Height";
             // 
             // heightBox
             // 
-            this.heightBox.Location = new System.Drawing.Point(178, 56);
+            this.heightBox.Location = new System.Drawing.Point(208, 65);
+            this.heightBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.heightBox.Name = "heightBox";
-            this.heightBox.Size = new System.Drawing.Size(100, 20);
+            this.heightBox.Size = new System.Drawing.Size(116, 23);
             this.heightBox.TabIndex = 1;
             this.heightBox.TextChanged += new System.EventHandler(this.HeightTextChanged);
             this.heightBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HeightKeyPressed);
@@ -138,17 +147,19 @@ namespace KR1
             // widthName
             // 
             this.widthName.AutoSize = true;
-            this.widthName.Location = new System.Drawing.Point(53, 31);
+            this.widthName.Location = new System.Drawing.Point(62, 36);
+            this.widthName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.widthName.Name = "widthName";
-            this.widthName.Size = new System.Drawing.Size(35, 13);
+            this.widthName.Size = new System.Drawing.Size(39, 15);
             this.widthName.TabIndex = 2;
             this.widthName.Text = "Width";
             // 
             // widthBox
             // 
-            this.widthBox.Location = new System.Drawing.Point(19, 56);
+            this.widthBox.Location = new System.Drawing.Point(22, 65);
+            this.widthBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.widthBox.Name = "widthBox";
-            this.widthBox.Size = new System.Drawing.Size(100, 20);
+            this.widthBox.Size = new System.Drawing.Size(116, 23);
             this.widthBox.TabIndex = 0;
             this.widthBox.TextChanged += new System.EventHandler(this.WidthTextChanged);
             this.widthBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WidthKeyPressed);
@@ -156,19 +167,21 @@ namespace KR1
             // playground
             // 
             this.playground.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.playground.Location = new System.Drawing.Point(595, 12);
+            this.playground.Location = new System.Drawing.Point(694, 14);
+            this.playground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.playground.Name = "playground";
-            this.playground.Size = new System.Drawing.Size(657, 657);
+            this.playground.Size = new System.Drawing.Size(766, 758);
             this.playground.TabIndex = 1;
             // 
-            // Form1
+            // Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1475, 786);
             this.Controls.Add(this.playground);
             this.Controls.Add(this.menu);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "Editor";
             this.Text = "Form1";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();

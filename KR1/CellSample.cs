@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace KR1
 {
-    class CellSample : PictureBox
+    public class CellSample : PictureBox
     {
         public bool isModificator;
         public Modificator mod;
@@ -27,7 +27,7 @@ namespace KR1
         }
     }
 
-    class CellSampleGenerator
+    public class CellSampleGenerator
     {
         private readonly int cellSize;
         private readonly Action<object, EventArgs> mouseEnterEvent;
